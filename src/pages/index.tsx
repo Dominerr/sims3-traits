@@ -1,22 +1,18 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import {
-  Autocomplete,
-  Chip,
-  FormControl,
-  FormControlLabel,
-  FormLabel,
-  MenuItem,
-  Radio,
-  RadioGroup,
-  TextField,
-} from "@mui/material";
+
 import { traits } from "@/traits/basic";
 import { Controller, useForm } from "react-hook-form";
 import { generateChildTrait } from "@/traits/logic";
 import { useState } from "react";
-
-const inter = Inter({ subsets: ["latin"] });
+import { capitalizeFirstLetter, traitExistsForAge } from "@/traits/helpers";
+import Autocomplete from "@mui/material/Autocomplete";
+import Chip from "@mui/material/Chip";
+import MenuItem from "@mui/material/MenuItem";
+import TextField from "@mui/material/TextField";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Radio from "@mui/material/Radio";
+import Button from "@mui/material/Button";
 
 export default function Home() {
   const {
@@ -40,14 +36,17 @@ export default function Home() {
     },
   });
   const [result, setResult] = useState<null | string[]>(null);
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = () => {
+    setLoading(true);
     const { parent1, parent2, own, age } = watch();
     const parentTraits = [...(parent1 || []), ...(parent2 || [])];
     const result = generateChildTrait(age, parentTraits, own);
     if (result) {
       setResult(result);
     }
+    setLoading(false);
   };
 
   return (
@@ -217,7 +216,7 @@ export default function Home() {
                   label="Teen"
                 />
                 <FormControlLabel
-                  value="Adult"
+                  value="adult"
                   control={<Radio />}
                   label="Adult"
                 />
@@ -233,31 +232,31 @@ export default function Home() {
                 switch (watch("age")) {
                   case "baby":
                     if (value.length !== 0) {
-                      return "No trait for baby";
+                      return "Baby can't have traits";
                     }
                     return true;
                   case "child":
                     if (value.length === 0) {
-                      return "At least one trait";
+                      return "Please choose at least one trait";
                     }
                     if (value.length > 2) {
-                      return "Max 2 traits";
+                      return "The child can have up to 2 traits";
                     }
                     return true;
                   case "teen":
                     if (value.length === 0) {
-                      return "At least one trait";
+                      return "Please choose at least one trait";
                     }
                     if (value.length > 3) {
-                      return "Max 3 traits";
+                      return "The teen can have up to 3 traits";
                     }
                     return true;
-                  case "Adult":
+                  case "adult":
                     if (value.length === 0) {
-                      return "At least one trait";
+                      return "Please choose at least one trait";
                     }
                     if (value.length > 4) {
-                      return "Max 4 traits";
+                      return "The adult can have up to 4 traits";
                     }
                     return true;
                 }
@@ -292,7 +291,9 @@ export default function Home() {
                       />
                     ))
                   }
-                  options={traits}
+                  options={traits.filter((trait) =>
+                    traitExistsForAge(watch("age"), trait.requiredAge)
+                  )}
                   renderOption={(props, option) => (
                     <MenuItem {...props} className="flex gap-2 items-center">
                       <Image
@@ -309,7 +310,7 @@ export default function Home() {
                   renderInput={(params) => (
                     <TextField
                       {...params}
-                      label="Child"
+                      label={capitalizeFirstLetter(watch("age"))}
                       error={!!errors.own}
                       helperText={errors.own?.message}
                       variant="standard"
@@ -321,9 +322,13 @@ export default function Home() {
           />
         </div>
         <div className="flex justify-center mt-10">
-          <button className="bg-black py-2 px-4 font-semibold rounded-md text-white">
-            Generate
-          </button>
+          <Button
+            className="bg-black py-2 px-4 font-semibold rounded-md text-white hover:bg-slate-700"
+            type="submit"
+            disabled={loading}
+          >
+            {loading ? "Loading..." : "Generate"}
+          </Button>
         </div>
 
         {result && (
