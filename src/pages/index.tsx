@@ -40,17 +40,14 @@ export default function Home() {
     },
   });
   const [result, setResult] = useState<null | string[]>(null);
-  console.log(watch());
 
   const onSubmit = () => {
-    console.log("submit", watch());
     const { parent1, parent2, own, age } = watch();
     const parentTraits = [...(parent1 || []), ...(parent2 || [])];
     const result = generateChildTrait(age, parentTraits, own);
     if (result) {
       setResult(result);
     }
-    console.log("result", result);
   };
 
   return (
