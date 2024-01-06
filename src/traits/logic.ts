@@ -3,10 +3,15 @@ import { traitExistsForAge } from "./helpers";
 export function generateChildTrait(
   age: string,
   parentsTraits: typeof traits,
-  ownTraits: typeof traits
+  ownTraits: typeof traits,
+  expansions: string[]
 ) {
+  const filteredTraits = traits.filter(
+    (trait) =>
+      expansions.includes(trait.expansion) || trait.expansion === "Base Game"
+  );
   const babyTraits = [...ownTraits];
-  let newTraits = JSON.parse(JSON.stringify(traits)) as typeof traits;
+  let newTraits = JSON.parse(JSON.stringify(filteredTraits)) as typeof traits;
   newTraits = newTraits.filter(
     (trait) =>
       traitExistsForAge(age, trait.requiredAge) &&
@@ -18,10 +23,10 @@ export function generateChildTrait(
   parentsTraits.forEach((parentTrait) => {
     parentTrait.parentInfluence.forEach((influence) => {
       const updatedTrait = newTraits.find(
-        (trait) => trait.label === influence.trait
+        (trait) => trait.label === influence?.trait
       );
       if (!updatedTrait) return;
-      updatedTrait.weight *= influence.factor;
+      updatedTrait.weight *= influence?.factor || 1;
       newTraits = Array.from(new Set([...newTraits, updatedTrait]));
     });
   });
@@ -29,10 +34,10 @@ export function generateChildTrait(
   (ownTraits || []).forEach((ownTrait) => {
     ownTrait.ownInfluence.forEach((influence) => {
       const updatedTrait = newTraits.find(
-        (trait) => trait.label === influence.trait
+        (trait) => trait.label === influence?.trait
       );
       if (!updatedTrait) return;
-      updatedTrait.weight *= influence.factor;
+      updatedTrait.weight *= influence?.factor || 1;
       newTraits = Array.from(new Set([...newTraits, updatedTrait]));
     });
   });

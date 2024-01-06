@@ -1,3 +1,54 @@
+export const expansions = [
+  {
+    label: "Base Game",
+    iconUrl: "/Expansion_Base_Game.gif",
+  },
+  {
+    label: "World Adventures",
+    iconUrl: "/Expansion_World_Adventures.gif",
+  },
+  {
+    label: "Ambitions",
+    iconUrl: "/Expansion_Ambitions.gif",
+  },
+  {
+    label: "Late Night",
+    iconUrl: "/Expansion_Late_Night.gif",
+  },
+  {
+    label: "Generations",
+    iconUrl: "/Expansion_Generations.gif",
+  },
+  {
+    label: "Pets",
+    iconUrl: "/Expansion_Pets.gif",
+  },
+  {
+    label: "Showtime",
+    iconUrl: "/Expansion_Showtime.gif",
+  },
+  {
+    label: "Supernatural",
+    iconUrl: "/Expansion_Supernatural.gif",
+  },
+  {
+    label: "Seasons",
+    iconUrl: "/Expansion_Seasons.gif",
+  },
+  {
+    label: "University Life",
+    iconUrl: "/Expansion_University_Life.gif",
+  },
+  {
+    label: "Island Paradise",
+    iconUrl: "/Expansion_Island_Paradise.gif",
+  },
+  {
+    label: "Into the Future",
+    iconUrl: "/Expansion_Into_the_Future.gif",
+  },
+];
+
 export const traits = [
   {
     label: "Absent-Minded",
@@ -10,7 +61,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Perceptive", factor: 5 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Artistic",
@@ -23,7 +74,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Can't Stand Art", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Athletic",
@@ -36,7 +87,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Couch Potato", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Brave",
@@ -53,7 +104,7 @@ export const traits = [
       { trait: "Loser", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Clumsy",
@@ -66,7 +117,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Natural Born Performer", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Couch Potato",
@@ -84,7 +135,7 @@ export const traits = [
       { trait: "Disciplined", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Disciplined",
@@ -97,7 +148,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Couch Potato", factor: 0 }],
     requiredAge: "baby",
-    expantion: "World Adventures",
+    expansion: "World Adventures",
   },
   {
     label: "Easily Impressed",
@@ -115,7 +166,7 @@ export const traits = [
       { trait: "Avant Garde", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Eccentric",
@@ -127,7 +178,7 @@ export const traits = [
     ],
     ownInfluence: [],
     requiredAge: "baby",
-    expantion: "Ambitions",
+    expansion: "Ambitions",
   },
   {
     label: "Evil",
@@ -139,7 +190,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Good", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Excitable",
@@ -155,7 +206,7 @@ export const traits = [
       { trait: "Brooding", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Friendly",
@@ -167,7 +218,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Mean Spirited", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Genius",
@@ -179,7 +230,7 @@ export const traits = [
     ],
     ownInfluence: [],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Good",
@@ -191,7 +242,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Evil", factor: 0 }, ,],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Grumpy",
@@ -207,7 +258,7 @@ export const traits = [
       { trait: "Excitable", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Hates the Outdoors",
@@ -225,7 +276,7 @@ export const traits = [
       { trait: "Sailor", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Heavy Sleeper",
@@ -237,7 +288,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Light Sleeper", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Insane",
@@ -246,7 +297,7 @@ export const traits = [
     parentInfluence: [{ trait: "Insane", factor: 10 }],
     ownInfluence: [],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Light Sleeper",
@@ -258,7 +309,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Heavy Sleeper", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Loner",
@@ -274,7 +325,7 @@ export const traits = [
       { trait: "Party Animal", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Loves the Cold",
@@ -283,7 +334,7 @@ export const traits = [
     parentInfluence: [{ trait: "Loves the Cold", factor: 10 }],
     ownInfluence: [],
     requiredAge: "baby",
-    expantion: "Seasons",
+    expansion: "Seasons",
   },
   {
     label: "Loves the Heat",
@@ -292,7 +343,7 @@ export const traits = [
     parentInfluence: [{ trait: "Loves the Heat", factor: 10 }],
     ownInfluence: [],
     requiredAge: "baby",
-    expantion: "Seasons",
+    expansion: "Seasons",
   },
   {
     label: "Loves the Outdoors",
@@ -305,7 +356,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Hates the Outdoors", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Neurotic",
@@ -314,7 +365,7 @@ export const traits = [
     parentInfluence: [{ trait: "Neurotic", factor: 10 }],
     ownInfluence: [],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Perceptive",
@@ -326,7 +377,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Absent-Minded", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Ambitions",
+    expansion: "Ambitions",
   },
   {
     label: "Sailor",
@@ -339,7 +390,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Hates the Outdoors", factor: 0 }],
     requiredAge: "baby",
-    expantion: "Island Paradise",
+    expansion: "Island Paradise",
   },
   {
     label: "Slob",
@@ -355,7 +406,7 @@ export const traits = [
       { trait: "Proper", factor: 0 },
     ],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Virtuoso",
@@ -364,7 +415,7 @@ export const traits = [
     parentInfluence: [{ trait: "Virtuoso", factor: 10 }],
     ownInfluence: [],
     requiredAge: "baby",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
 
   {
@@ -377,7 +428,7 @@ export const traits = [
     ],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "World Adventures",
+    expansion: "World Adventures",
   },
   {
     label: "Ambitious",
@@ -386,7 +437,7 @@ export const traits = [
     parentInfluence: [{ trait: "Ambitious", factor: 10 }, ,],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Angler",
@@ -398,7 +449,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Hates the Outdoors", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Animal Lover",
@@ -416,7 +467,7 @@ export const traits = [
       { trait: "Dog Person", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Pets",
+    expansion: "Pets",
   },
   {
     label: "Bookworm",
@@ -428,7 +479,7 @@ export const traits = [
     ],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Bot Fan",
@@ -440,7 +491,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Technophobe", factor: 0 }],
     requiredAge: "child",
-    expantion: "Into the Future",
+    expansion: "Into the Future",
   },
   {
     label: "Can't Stand Art",
@@ -460,7 +511,7 @@ export const traits = [
       { trait: "Avant Garde", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Cat Person",
@@ -478,7 +529,7 @@ export const traits = [
       { trait: "Equestrian", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Pets",
+    expansion: "Pets",
   },
   {
     label: "Computer Whiz",
@@ -490,7 +541,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Technophobe", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Coward",
@@ -510,7 +561,7 @@ export const traits = [
       { trait: "Supernatural Fan", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Daredevil",
@@ -522,7 +573,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Coward", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Diva",
@@ -534,7 +585,7 @@ export const traits = [
     ],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Showtime",
+    expansion: "Showtime",
   },
   {
     label: "Dog Person",
@@ -552,7 +603,7 @@ export const traits = [
       { trait: "Equestrian", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Pets",
+    expansion: "Pets",
   },
   {
     label: "Eco-Friendly",
@@ -564,7 +615,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Hates the Outdoors", factor: 0 }],
     requiredAge: "child",
-    expantion: "Ambitions",
+    expansion: "Ambitions",
   },
   {
     label: "Equestrian",
@@ -582,7 +633,7 @@ export const traits = [
       { trait: "Cat Person", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Pets",
+    expansion: "Pets",
   },
   {
     label: "Family-Oriented",
@@ -595,7 +646,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Dislikes Children", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Frugal",
@@ -604,7 +655,7 @@ export const traits = [
     parentInfluence: [{ trait: "Frugal", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Good Sense of Humor",
@@ -616,7 +667,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "No Sense of Humor", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Hot-Headed",
@@ -628,7 +679,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Grumpy", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Hydrophobic",
@@ -640,7 +691,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Loves To Swim", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Inappropriate",
@@ -652,7 +703,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Proper", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Kleptomaniac",
@@ -661,7 +712,7 @@ export const traits = [
     parentInfluence: [{ trait: "Kleptomaniac", factor: 10 }, ,],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Loser",
@@ -677,7 +728,7 @@ export const traits = [
       { trait: "Charismatic", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Loves To Swim",
@@ -689,7 +740,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Hydrophobic", factor: 0 }],
     requiredAge: "child",
-    expantion: "Island Paradise",
+    expansion: "Island Paradise",
   },
   {
     label: "Lucky",
@@ -701,7 +752,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Unlucky", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Mean Spirited",
@@ -714,7 +765,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Friendly", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Mooch",
@@ -723,7 +774,7 @@ export const traits = [
     parentInfluence: [{ trait: "Mooch", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Neat",
@@ -735,7 +786,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Slob", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Never Nude",
@@ -744,7 +795,7 @@ export const traits = [
     parentInfluence: [{ trait: "Never Nude", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Night Owl",
@@ -753,7 +804,7 @@ export const traits = [
     parentInfluence: [{ trait: "Night Owl", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Supernatural",
+    expansion: "Supernatural",
   },
   {
     label: "No Sense of Humor",
@@ -765,7 +816,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Good Sense of Humor", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Over-Emotional",
@@ -774,7 +825,7 @@ export const traits = [
     parentInfluence: [{ trait: "Over-Emotional", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Party Animal",
@@ -790,7 +841,7 @@ export const traits = [
       { trait: "Shy", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Perfectionist",
@@ -799,7 +850,7 @@ export const traits = [
     parentInfluence: [{ trait: "Perfectionist", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Photographer's Eye",
@@ -808,7 +859,7 @@ export const traits = [
     parentInfluence: [{ trait: "Photographer's Eye", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "World Adventures",
+    expansion: "World Adventures",
   },
   {
     label: "Rebellious",
@@ -820,7 +871,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Schmoozer", factor: 0 }],
     requiredAge: "child",
-    expantion: "Generations",
+    expansion: "Generations",
   },
   {
     label: "Shy",
@@ -839,7 +890,7 @@ export const traits = [
       { trait: "Social Butterfly", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Late Night",
+    expansion: "Late Night",
   },
   {
     label: "Snob",
@@ -851,7 +902,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Easily Impressed", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Star Quality",
@@ -860,7 +911,7 @@ export const traits = [
     parentInfluence: [{ trait: "Star Quality", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Late Night",
+    expansion: "Late Night",
   },
   {
     label: "Supernatural Fan",
@@ -876,7 +927,7 @@ export const traits = [
       { trait: "Coward", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Supernatural",
+    expansion: "Supernatural",
   },
   {
     label: "Technophobe",
@@ -894,7 +945,7 @@ export const traits = [
       { trait: "Couch Potato", factor: 0 },
     ],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Unlucky",
@@ -906,7 +957,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Lucky", factor: 0 }],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Unstable",
@@ -915,7 +966,7 @@ export const traits = [
     parentInfluence: [{ trait: "Unstable", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Into the Future",
+    expansion: "Into the Future",
   },
   {
     label: "Vegetarian",
@@ -924,7 +975,7 @@ export const traits = [
     parentInfluence: [{ trait: "Vegetarian", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Vehicle Enthusiast",
@@ -933,7 +984,7 @@ export const traits = [
     parentInfluence: [{ trait: "Vehicle Enthusiast", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Workaholic",
@@ -942,7 +993,7 @@ export const traits = [
     parentInfluence: [{ trait: "Workaholic", factor: 10 }],
     ownInfluence: [],
     requiredAge: "child",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Avant Garde",
@@ -958,7 +1009,7 @@ export const traits = [
       { trait: "Easily Impressed", factor: 0 },
     ],
     requiredAge: "teen",
-    expantion: "University Life",
+    expansion: "University Life",
   },
   {
     label: "Born Salesperson",
@@ -967,7 +1018,7 @@ export const traits = [
     parentInfluence: [{ trait: "Born Salesperson", factor: 10 }],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "Ambitions",
+    expansion: "Ambitions",
   },
   {
     label: "Brooding",
@@ -979,7 +1030,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Excitable", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Supernatural",
+    expansion: "Supernatural",
   },
   {
     label: "Charismatic",
@@ -995,7 +1046,7 @@ export const traits = [
       { trait: "Socially Awkward", factor: 0.8 },
     ],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Childish",
@@ -1007,7 +1058,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Dislikes Children", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Commitment Issues",
@@ -1019,7 +1070,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Hopeless Romantic", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Dislikes Children",
@@ -1037,7 +1088,7 @@ export const traits = [
       { trait: "Nurturing", factor: 0 },
     ],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Dramatic",
@@ -1046,7 +1097,7 @@ export const traits = [
     parentInfluence: [{ trait: "Dramatic", factor: 10 }],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "Ambitions",
+    expansion: "Ambitions",
   },
   {
     label: "Flirty",
@@ -1062,7 +1113,7 @@ export const traits = [
       { trait: "Shy", factor: 0 },
     ],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Gatherer",
@@ -1071,7 +1122,7 @@ export const traits = [
     parentInfluence: [{ trait: "Gatherer", factor: 10 }],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "Supernatural",
+    expansion: "Supernatural",
   },
   {
     label: "Great Kisser",
@@ -1080,7 +1131,7 @@ export const traits = [
     parentInfluence: [{ trait: "Great Kisser", factor: 10 }],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Green Thumb",
@@ -1092,7 +1143,7 @@ export const traits = [
     ],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Handy",
@@ -1104,7 +1155,7 @@ export const traits = [
     ],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Hopeless Romantic",
@@ -1116,7 +1167,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Commitment Issues", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Irresistible",
@@ -1125,7 +1176,7 @@ export const traits = [
     parentInfluence: [{ trait: "Irresistible", factor: 10 }],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "University Life",
+    expansion: "University Life",
   },
   {
     label: "Natural Born Performer",
@@ -1142,7 +1193,7 @@ export const traits = [
       { trait: "Clumsy", factor: 0 },
     ],
     requiredAge: "teen",
-    expantion: "Showtime",
+    expansion: "Showtime",
   },
   {
     label: "Natural Cook",
@@ -1151,7 +1202,7 @@ export const traits = [
     parentInfluence: [{ trait: "Natural Cook", factor: 10 }],
     ownInfluence: [],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Nurturing",
@@ -1163,7 +1214,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Dislikes Children", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Generations",
+    expansion: "Generations",
   },
   {
     label: "Proper",
@@ -1179,7 +1230,7 @@ export const traits = [
       { trait: "Slob", factor: 0 },
     ],
     requiredAge: "teen",
-    expantion: "Supernatural",
+    expansion: "Supernatural",
   },
   {
     label: "Savvy Sculptor",
@@ -1191,7 +1242,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Can't Stand Art", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Ambitions",
+    expansion: "Ambitions",
   },
   {
     label: "Schmoozer",
@@ -1203,7 +1254,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Rebellious", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
   {
     label: "Social Butterfly",
@@ -1219,7 +1270,7 @@ export const traits = [
       { trait: "Loner", factor: 0 },
     ],
     requiredAge: "teen",
-    expantion: "Showtime",
+    expansion: "Showtime",
   },
   {
     label: "Socially Awkward",
@@ -1231,7 +1282,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Charismatic", factor: 0 }],
     requiredAge: "teen",
-    expantion: "University Life",
+    expansion: "University Life",
   },
   {
     label: "Supernatural Skeptic",
@@ -1243,7 +1294,7 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Supernatural Fan", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Supernatural",
+    expansion: "Supernatural",
   },
   {
     label: "Unflirty",
@@ -1255,6 +1306,6 @@ export const traits = [
     ],
     ownInfluence: [{ trait: "Flirty", factor: 0 }],
     requiredAge: "teen",
-    expantion: "Base Game",
+    expansion: "Base Game",
   },
 ];
