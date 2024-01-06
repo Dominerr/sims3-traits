@@ -45,7 +45,7 @@ export const expansions = [
   },
   {
     label: "Into the Future",
-    iconUrl: "/Expansion_Into_the_Future.gif",
+    iconUrl: "/Expansion_Into_The_Future.gif",
   },
 ];
 
